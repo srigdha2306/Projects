@@ -1,0 +1,203 @@
+/* Global Body Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #8c53ff;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* Main Container */
+#container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+    width: 827px;
+    height: 600px;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    overflow-y: auto;
+}
+
+/* List Header */
+#list-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+/* Blank Divs */
+.blankDiv {
+    background-color: #fff;
+    border: none;
+    padding: 20px;
+    border-radius: 8px;
+    height: 200px;
+    width: 200px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Add Note Div */
+#addNoteDiv {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    height: 200px;
+    width: 200px;
+    margin: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.25s ease;
+}
+
+#addNoteDiv:hover {
+    background-color: #f1f1f1;
+}
+
+#addNoteDiv i {
+    font-size: 70px;
+    color: gainsboro;
+}
+
+/* Notes List */
+#list-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+li {
+    background-color: #fff385;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 200px;    
+    width: 200px;
+    margin: 10px;
+    box-shadow: 9px 9px 18px #b3b3b3, -9px -9px 18px #ffffff;
+}
+
+li span {
+    font-size: 12px;
+    flex-grow: 1;
+    word-wrap: break-word;
+    overflow-y: auto;
+    width: 100%;
+    text-align: left;
+}
+
+/* Buttons */
+#editBtn, #deleteBtn {
+    background-color: #c6aaff;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 12px;
+    width: 60px;
+    transition: background-color 0.3s ease;
+}
+
+#editBtn {
+    background-color: gainsboro;
+}
+
+#deleteBtn:hover {
+    background-color: #8c53ff;
+}
+
+#editBtn:hover {
+    background-color: gray;
+}
+
+/* Popup Containers */
+#popupContainer, #editing-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 300px;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+/* Textarea */
+textarea {
+    width: 300px;
+    height: 200px;
+    margin: 10px 0;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 2px solid #8c53ff;
+    resize: none;
+}
+
+/* Buttons */
+#sumbitBtn, #closeBtn {
+    width: 100px;
+    background-color: #8c53ff;
+    color: #fff;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    margin: 10px;
+    transition: background-color 0.3s ease;
+}
+
+#closeBtn {
+    background-color: gainsboro;
+}
+/* (Previous CSS remains the same, just add these styles) */
+#color-picker {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#color-picker label {
+    margin-right: 10px;
+}
+
+#note-color {
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+}
